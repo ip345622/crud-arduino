@@ -6,10 +6,14 @@ import cors from "cors";
 import arduinoRoutes from "./routes/arduino.routes.js"
 
 const app = express();
+
+
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
-app.use(arduinoRoutes);
+app.use('/api',arduinoRoutes);
+
+
 
 export default app;

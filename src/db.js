@@ -17,7 +17,7 @@ export const sequelize = new Sequelize({
 export const connectionDB = async () => {
   try {
     // await sequelize.authenticate();
-    console.log('La base de datos está conectada');
+    // console.log('La base de datos está conectada');
   } catch (error) {
     console.error('Error de conexión a la base de datos:', error);
   }

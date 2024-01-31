@@ -9,8 +9,12 @@ const Arduino = sequelize.define('tb_sensores', {
       allowNull: false,
     },
     Lectura_Sensor: {
-      type: DataTypes.STRING,
+      type: DataTypes.FLOAT,
       allowNull: false,
+    },
+    Tipo_Medicion:{
+      type: DataTypes.STRING,
+      allowNull: false, 
     },
     led:{
         type: DataTypes.STRING,
